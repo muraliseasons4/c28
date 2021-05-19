@@ -2,9 +2,9 @@ class Dustbin {
     constructor(x, y, width, height) {
       var options = {
            'isStatic': true,
-          'restitution':0.5,
+          'restitution':0.9,
           'friction':1.2,
-          'density':5.0,
+          'density':5.8,
       }
   
       this.body = Bodies.rectangle(x, y, width, height, options);
@@ -21,9 +21,9 @@ class Dustbin {
       rotate(angle);
       rectMode(CENTER);
       strokeWeight(5);
-      stroke("yellow");
-      fill("white");
-      rect(0, 0, this.width, this.height);
+      stroke("black");
+      fill("green");
+      rect(4, 4, this.width, this.height);
       pop();
     }
   };
